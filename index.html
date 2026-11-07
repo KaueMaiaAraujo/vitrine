@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minha vitrine</title>
+<meta name="description" content="Produtos selecionados com links de afiliado do Mercado Livre">
+<style>
+:root{--bg:#f3f6f9;--sf:#fff;--ink:#0f1f2e;--mut:#566878;--ln:#dbe3ea;--brand:#0a5d7a;--onb:#fff;--tint:#e8f3f7;--ac:#ffe600;--sh:0 1px 2px rgba(15,31,46,.06),0 8px 24px -10px rgba(15,31,46,.2)}
+@media(prefers-color-scheme:dark){:root{--bg:#0b141c;--sf:#111f2b;--ink:#e8eef3;--mut:#8da2b3;--ln:#223442;--brand:#4cc0e4;--onb:#06222d;--tint:#12303c;--sh:0 1px 2px rgba(0,0,0,.4),0 10px 26px -12px rgba(0,0,0,.7)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Inter","Segoe UI Variable","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.w{max-width:1120px;margin:0 auto;padding:0 16px}
+.hd{background:#0a3d52;color:#fff;padding:34px 0 26px}
+.hd h1{font-size:clamp(28px,6vw,40px);line-height:1.1;margin:0 0 8px;font-weight:800;letter-spacing:-.02em}
+.tg{margin:0 0 16px;max-width:60ch;color:#cfe3ec}
+.tr{display:flex;gap:6px 18px;flex-wrap:wrap;list-style:none;margin:0;padding:0;font-size:.88rem;color:#e6f2f7}
+.tr li:before{content:"✓";color:var(--ac);font-weight:800;margin-right:6px}
+main{padding-top:20px}
+input{width:100%;font:inherit;color:var(--ink);background:var(--sf);border:1px solid var(--ln);border-radius:12px;padding:12px 14px}
+.bar{margin-bottom:12px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.chips button{font:inherit;font-weight:650;font-size:.88rem;cursor:pointer;border:1px solid var(--ln);border-radius:99px;background:var(--sf);color:var(--ink);padding:6px 14px;transition:background .15s,border-color .15s}
+.chips button:hover{border-color:var(--brand)}
+.chips button[aria-pressed=true]{background:var(--brand);border-color:var(--brand);color:var(--onb)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+@media(max-width:560px){.g{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.t{font-size:.92rem}}
+.c{display:flex;flex-direction:column;background:var(--sf);border:1px solid var(--ln);border-radius:16px;overflow:hidden;color:inherit;text-decoration:none;box-shadow:var(--sh);transition:transform .15s}
+.c:hover{transform:translateY(-3px)}
+.im{aspect-ratio:1/1;background:#fff;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--ln)}
+.im img{width:100%;height:100%;object-fit:contain}
+.im i{color:#7a8a98;font-style:normal;font-size:14px}
+.b{padding:14px;display:flex;flex-direction:column;gap:7px;flex:1}
+.t{font-weight:600;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.p{font-weight:800;font-size:1.3rem;letter-spacing:-.01em}
+.n{font-size:.86rem;color:var(--mut)}
+.f{align-self:flex-start;background:var(--tint);color:var(--brand);font-weight:700;font-size:.74rem;border-radius:99px;padding:2px 10px}
+.btn{margin-top:auto;background:var(--ac);color:#10202c;font-weight:800;text-align:center;border-radius:10px;padding:11px}
+.c:hover .btn{filter:brightness(.96)}
+.e{text-align:center;color:var(--mut);padding:40px 0;grid-column:1/-1}
+.ft{padding-top:26px;padding-bottom:48px;color:var(--mut);font-size:.86rem}
+.ft a{color:var(--brand);font-weight:700}
+.ct{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:10px}
+.cps{margin-bottom:20px}
+.cps h2{font-size:1.1rem;margin:0 0 10px}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.cp{background:var(--sf);border:1.5px dashed var(--brand);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.cc{font:800 1.3rem ui-monospace,Menlo,Consolas,monospace;letter-spacing:.04em;color:var(--brand);word-break:break-all}
+.cd small{display:block;color:var(--mut);font-size:.82rem}
+.ca{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.ca button,.ca a{font:inherit;font-weight:700;font-size:.85rem;cursor:pointer;border:1px solid var(--brand);border-radius:10px;padding:7px 12px;background:var(--brand);color:var(--onb);text-decoration:none}
+.ca a{background:transparent;color:var(--brand)}
+.cn{color:var(--mut);font-size:.8rem;margin:8px 0 0}
+.kp{font-size:.82rem;background:var(--tint);color:var(--brand);border-radius:8px;padding:4px 8px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hd"><div class="w"><h1 id="nm"></h1><p class="tg" id="tg"></p>
+<ul class="tr"><li>Você finaliza a compra no Mercado Livre</li><li>Sem custo extra para você</li><li>Confira preço e estoque antes de comprar</li></ul></div></header>
+<main class="w">
+<section class="cps" id="cps" aria-label="Cupons"></section>
+<div class="bar"><input id="q" type="search" placeholder="Buscar produto" aria-label="Buscar produto"></div>
+<div class="chips" id="ch"></div>
+<div class="g" id="g"></div>
+</main>
+<footer class="w ft">
+<div class="ct" id="ct"></div>
+<p>Publicidade: como afiliado do Mercado Livre, posso receber comissão pelas compras feitas pelos links desta página, sem custo extra para você. Os preços são de referência e podem mudar.</p>
+<p id="up"></p>
+</footer>
+<script type="application/json" id="d">{"cfg":{"name":"Minha vitrine","tag":"Produtos selecionados com links do Mercado Livre","wa":"","ig":"","d":"07/11/2026"},"items":[],"cp":[]}</script>
+<script>
+(function(){
+var D=JSON.parse(document.getElementById("d").textContent),C=D.cfg,L=D.items,cat="",q="";
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function money(v){var n=Number(v);return n>0?n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"}):""}
+$("nm").textContent=C.name;$("tg").textContent=C.tag;document.title=C.name;
+$("up").textContent="Lista atualizada em "+C.d+".";
+var ct=[];
+if(C.wa)ct.push('<a href="https://wa.me/'+esc(C.wa)+'" target="_blank" rel="noopener">WhatsApp</a>');
+if(C.ig)ct.push('<a href="https://instagram.com/'+esc(C.ig)+'" target="_blank" rel="noopener">Instagram</a>');
+$("ct").innerHTML=ct.join("");
+var CPN=D.cp||[],CL=[];
+function today(){var d=new Date();return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2)}
+function ok(e){return !e||e>=today()}
+function fd(e){return e?e.split("-").reverse().join("/"):""}
+function cps(){CL=CPN.filter(function(c){return ok(c.e)});
+ $("cps").innerHTML=CL.length?'<h2>Cupons disponíveis</h2><div class="cg">'+CL.map(function(c,i){return '<div class="cp"><div class="cc">'+esc(c.c)+'</div><div class="cd"><b>'+esc(c.d||"Desconto")+'</b>'+(c.r?'<small>'+esc(c.r)+'</small>':'')+(c.e?'<small>Válido até '+fd(c.e)+'</small>':'')+'</div><div class="ca"><button type="button" data-i="'+i+'">Copiar código</button>'+(c.u&&/^https?:/i.test(c.u)?'<a href="'+esc(c.u)+'" target="_blank" rel="noopener sponsored nofollow">Ativar no site</a>':'')+'</div></div>'}).join("")+'</div><p class="cn">Cupons seguem as regras e a disponibilidade do Mercado Livre.</p>':""}
+$("cps").addEventListener("click",function(e){var b=e.target.closest("button[data-i]");if(!b)return;var c=CL[+b.dataset.i];if(!c)return;
+ function done(v){var o=b.dataset.o||b.textContent;b.dataset.o=o;b.textContent=v?"Copiado ✓":"Selecione e copie";setTimeout(function(){b.textContent=o},1800)}
+ function fb(){var a=document.createElement("textarea");a.value=c.c;a.style.position="fixed";a.style.opacity="0";document.body.appendChild(a);a.select();var r=false;try{r=document.execCommand("copy")}catch(x){}a.remove();done(r)}
+ if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(c.c).then(function(){done(true)},fb);else fb()});
+cps();
+
+var cats=[];L.forEach(function(i){if(i.c&&cats.indexOf(i.c)<0)cats.push(i.c)});cats.sort();
+function chips(){
+  if(!cats.length){$("ch").innerHTML="";return}
+  $("ch").innerHTML=["Tudo"].concat(cats).map(function(c){var v=c==="Tudo"?"":c;return '<button type="button" data-c="'+esc(v)+'" aria-pressed="'+(v===cat)+'">'+esc(c)+'</button>'}).join("");
+}
+function draw(){
+  var l=L.filter(function(i){return (!cat||i.c===cat)&&(!q||(i.t+" "+i.n).toLowerCase().indexOf(q)>-1)});
+  $("g").innerHTML=l.length?l.map(function(i){
+    return '<a class="c" href="'+esc(i.u)+'" target="_blank" rel="noopener sponsored nofollow"><div class="im">'+(i.i?'<img src="'+esc(i.i)+'" alt="" loading="lazy" referrerpolicy="no-referrer">':'<i>Sem foto</i>')+'</div><div class="b">'
+      +(i.f?'<span class="f">Destaque</span>':'')+'<div class="t">'+esc(i.t)+'</div>'+(i.p?'<div class="p">'+money(i.p)+'</div>':'')+(i.k&&ok(i.k.e)?'<div class="kp">Cupom <b>'+esc(i.k.c)+'</b>'+(i.k.d?' · '+esc(i.k.d):'')+'</div>':'')+(i.n?'<div class="n">'+esc(i.n)+'</div>':'')+'<div class="btn">Ver no Mercado Livre</div></div></a>';
+  }).join(""):'<div class="e">'+(L.length?"Nenhum produto encontrado.":"Em breve, novos produtos por aqui.")+'</div>';
+}
+$("ch").onclick=function(e){var b=e.target.closest("button");if(!b)return;cat=b.dataset.c;chips();draw()};
+$("q").oninput=function(){q=this.value.toLowerCase().trim();draw()};
+$("g").addEventListener("error",function(e){var t=e.target;if(t.tagName==="IMG")t.parentNode.innerHTML="<i>Sem foto</i>"},true);
+chips();draw();
+})();
+</script>
+</body>
+</html>
